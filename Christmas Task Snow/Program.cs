@@ -84,6 +84,7 @@ namespace Christmas_Task_Snow
             for (int i = 0; i < i + 1; i++)
             {
                 snowflake snow = populatessnow();
+                
                 addsnow(snow);
                 snows.Add(snow);
                 for(int index = 0; index < snows.Count + 1; index++)
@@ -92,6 +93,7 @@ namespace Christmas_Task_Snow
                     {
                         snowflake newsnow = snowmove(snows[0]);
                         snows.Remove(snows[0]);
+                        
                         snows.Add(newsnow);
                     } catch (Exception e)
                     {
